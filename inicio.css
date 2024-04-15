@@ -1,0 +1,127 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #121212;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.wb_element ul.hmenu {
+    list-style: none;
+    padding: 0;
+    background-color: #005f73;
+    overflow: hidden;
+    color: white;
+    margin: 0;
+}
+
+.wb_element ul.hmenu li {
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.wb_element ul.hmenu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wb_element ul.hmenu li a:hover {
+    background-color: #014949;
+}
+
+/* Ajusta esto al ancho de tu menú desplegable */
+@media screen and (max-width: 1200px) {
+    .wb_element ul.hmenu li {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Otros estilos de tu página */
+.wb_element h1.wb-stl-heading1,
+.wb_element h3.wb-stl-heading3,
+.wb_element h4.wb-stl-pagetitle,
+.wb_element h4.wb-stl-custom16,
+.wb_element h5.wb-stl-subtitle {
+    margin-bottom: 1em;
+}
+
+.wb_element h1.wb-stl-heading1 {
+    color: #000;
+}
+
+.wb_element h3.wb-stl-heading3 {
+    color: #fff;
+}
+
+/* Estilos para footer */
+#wb_footer {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+/* Asegúrate de que tu imagen de fondo esté en la ruta correcta y ajusta las dimensiones según sea necesario */
+.wb_cont_inner {
+    background-image: url('e52dd0c9-b113-47e1-8c14-6d89f60026aa.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Si necesitas ajustar la imagen del logo */
+#wb_element_instance12 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el contenedor del menú y el botón */
+#nav-container {
+    position: absolute; /* Posición fija en la esquina */
+    top: 0;
+    left: 0;
+    z-index: 100; /* Asegura que el menú esté sobre otros elementos */
+}
+
+#menu-button {
+    background: #005f73; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor de mano al pasar el ratón */
+    font-size: 18px; /* Tamaño de fuente del menú */
+}
+
+/* Estilos para el menú desplegable */
+#menu {
+    list-style-type: none; /* Sin viñetas */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+    background: #333; /* Color de fondo del menú */
+    position: absolute; /* Posición absoluta */
+    top: 40px; /* Desplazado hacia abajo */
+    left: 0;
+    width: 200px; /* Ancho del menú */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Sombra del menú */
+    display: none; /* Oculto por defecto */
+}
+
+/* Estilos para los elementos de la lista del menú */
+#menu li a {
+    color: white; /* Color de texto */
+    padding: 12px 16px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Hace que el enlace llene el contenedor li */
+}
+
+#menu li a:hover {
+    background-color: #111; /* Color al pasar el ratón */
+}
+
+/* Clase para mostrar el menú */
+#menu:not(.hidden) {
+    display: block;
+}
